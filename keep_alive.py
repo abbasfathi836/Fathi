@@ -1,15 +1,15 @@
 from flask import Flask
-from threading import Thread
+import threading
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "I'm alive!"
+    return "🤖 ربات تلگرام فعال است"
 
-def run():
+def run_flask():
     app.run(host='0.0.0.0', port=8080)
 
 def keep_alive():
-    t = Thread(target=run)
+    t = threading.Thread(target=run_flask)
     t.start()
