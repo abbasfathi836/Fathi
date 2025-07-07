@@ -20,7 +20,7 @@ rate_limit_start_time = None
 # ---------- اتصال ----------
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("models/gemini-2.5-flash")
+model = genai.GenerativeModel("models/gemini-2.5-flash-lite preview")
 
 # ---------- متغیرهای حافظه ----------
 user_contexts = {}         # حافظه مکالمات کاربران
@@ -301,11 +301,11 @@ def send_gemini_continued(message):
     # دریافت سبک نوشتاری کاربر از پروفایل
     users = load_users()
     user = users.get(code, {})
-    writing_style = user.get("writing_style", "سبک رسمی و اداری با رعایت سلسله مراتب و استفاده از اصطلاحات حقوقی در صورت لزوم")
+    writing_style = user.get("writing_style")
 
     # ساخت prompt با دستورالعمل مخفی
     system_prompt = (
-        "شما یک دستیار هوشمند برای مکاتبات اداری و رسمی ایران هستید. "
+        "در مکاتبات از قوانین رسمی و اداری ایران استفاده بشود و با بهره گیری از ظرفیتهای کامل منابع و هوشمندی خود شما استفاده شود که با کوتاه ترین جملات ولی بیشترین معنا را داشته باشد و نیاز سوال کاربر را با بیشترین خلاقیت برطرف کند و این نکته باید همیشه در نظر گرفته شود که مقدمات قبل و بعد مکاتبه اصلی کاملا حذف شود و فقط مکاتبه استاندارد و کامل ارائه گردد.
         f"ویژگی‌های سبک نوشتاری مورد نظر: {writing_style}\n\n"
     )
 
