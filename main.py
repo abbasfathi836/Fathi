@@ -20,7 +20,7 @@ rate_limit_start_time = None
 # ---------- اتصال ----------
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("models/gemini-2.5-flash-lite preview")
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 # ---------- متغیرهای حافظه ----------
 user_contexts = {}         # حافظه مکالمات کاربران
