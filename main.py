@@ -298,14 +298,10 @@ def send_gemini_continued(message):
 
     user_contexts[chat_id].append({"role": "user", "content": prompt})
 
-    # دریافت سبک نوشتاری کاربر از پروفایل
-    users = load_users()
-    user = users.get(code, {})
-    writing_style = user.get("writing_style")
-
     # ساخت prompt با دستورالعمل مخفی
     system_prompt = (
-    "لازم به توضیحات نیست و فقط اصل مکاتبه خلاقانه و فاخر نمایش داده شود"
+ f"ویژگی‌های سبک نوشتاری مورد نظر: {writing_style}\n\n"
+ "لازم به توضیحات نیست و فقط اصل مکاتبه خلاقانه و فاخر نمایش داده شود"
     )
 
     full_prompt = system_prompt + "\n\n"
