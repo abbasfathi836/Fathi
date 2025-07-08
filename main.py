@@ -20,7 +20,7 @@ rate_limit_start_time = None
 # ---------- اتصال ----------
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("models/gemini-2.0-flash")
+model = genai.GenerativeModel("models/gemini-1.5-flash")
 
 # ---------- متغیرهای حافظه ----------
 user_contexts = {}         # حافظه مکالمات کاربران
@@ -305,6 +305,7 @@ def send_gemini_continued(message):
 
     # ساخت prompt با دستورالعمل مخفی
     system_prompt = ( 
+        "فقط خود مکاتبه اصلی را نمایش بده"
         f"ویژگی‌های سبک نوشتاری مورد نظر: {writing_style}\n\n"
     )
 
