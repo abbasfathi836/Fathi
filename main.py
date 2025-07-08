@@ -306,7 +306,7 @@ def send_gemini_continued(message):
     # ساخت prompt با دستورالعمل مخفی
     system_prompt = ( 
     f"ویژگی‌های سبک نوشتاری مورد نظر: {writing_style}\n\n"
-    "لازم به توضیحات نیست و فقط اصل مکاتبه نمایش داده شود"
+    "لازم به توضیحات نیست و فقط اصل مکاتبه خلاقانه و فاخر نمایش داده شود"
     )
 
     full_prompt = system_prompt + "\n\n"
