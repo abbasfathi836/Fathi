@@ -1,18 +1,18 @@
 {
-  "2595942506": {
+  "2595": {
     "role": "admin",
     "expire": "2025-12-31",
-    "name": "fathi",
+    "name": "f",
     "national_id": "0023456789",
     "phone": "0912987654",
     "writing_style": "مدیر"
   },
-  "abbas836": {
+  "ab836": {
     "role": "user",
     "expire": "2025-12-31",
     "name": "عباس",
     "national_id": "12345",
-    "phone": "09118398257",
+    "phone": "0911",
     "writing_style": "مکاتبات در خصوص پدافند غیرعامل پزشکی قانونی باشد"
   },
   "64atefe64": {
