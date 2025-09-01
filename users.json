@@ -1,0 +1,26 @@
+{
+  "2595": {
+    "role": "admin",
+    "expire": "2025-12-31",
+    "name": "f",
+    "national_id": "56789",
+    "phone": "04",
+    "writing_style": "مدیر"
+  },
+  "ab836": {
+    "role": "user",
+    "expire": "2025-12-31",
+    "name": "عباس",
+    "national_id": "12345",
+    "phone": "0911",
+    "writing_style": "مکاتبات در خصوص پدافند غیرعامل پزشکی قانونی باشد"
+  },
+  "64ab": {
+    "role": "user",
+    "expire": "2025-12-31",
+    "name": "فتحی",
+    "national_id": "12345",
+    "phone": "0937",
+    "writing_style": "مکاتبات با استاندارد اداری و قوانین ایران باشد"
+  }
+}
