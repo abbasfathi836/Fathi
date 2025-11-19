@@ -8,7 +8,7 @@ from keep_alive import keep_alive  # اضافه شده برای Render
 
 # ---------- تنظیمات ----------
 TELEGRAM_TOKEN = "7747661039:AAGYPRPF_DX0JvszIQKZAjgAvSzS_Gqm0fg"
-GEMINI_API_KEY = "AIzaSyDbTQIO0QgTOpnfVQHuFn9Xd_ZPsaK34Pg"
+GEMINI_API_KEY = "AIzaSyBNa3CmIjI8Tv-MQ2Opcek4cR0LIRLpM_4"
 USERS_FILE = "users.json"
 
 # ---------- تنظیمات Rate Limit ----------
@@ -20,7 +20,7 @@ rate_limit_start_time = None
 # ---------- اتصال ----------
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel("models/gemini-2.0-flash")
+model = genai.GenerativeModel("models/gemini-2.5-flash")
 
 # ---------- متغیرهای حافظه ----------
 user_contexts = {}         # حافظه مکالمات کاربران
