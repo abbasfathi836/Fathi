@@ -1,7 +1,7 @@
 {
   "2595": {
     "role": "admin",
-    "expire": "2026-12-31",
+    "expire": "2025-12-31",
     "name": "عباس فتحی",
     "national_id": "56789",
     "phone": "04",
@@ -9,7 +9,7 @@
   },
   "ab836": {
     "role": "user",
-    "expire": "2026-12-31",
+    "expire": "2025-12-31",
     "name": "عباس",
     "national_id": "12345",
     "phone": "0911",
@@ -17,7 +17,7 @@
   },
   "64ab": {
     "role": "user",
-    "expire": "2026-12-31",
+    "expire": "2025-12-31",
     "name": "فتحی",
     "national_id": "12345",
     "phone": "0937",
